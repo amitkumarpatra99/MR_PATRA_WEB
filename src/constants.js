@@ -68,7 +68,7 @@ import face from './assets/Project Photo/Face Detection.png'
 import mind from './assets/Project Photo/mindforge.png'
 import connect from './assets/Project Photo/ConnectX.png'
 import battery from './assets/Project Photo/Battery.png'
-import job from './assets/Project Photo/JobFLow.png'
+import job from './assets/Project Photo/job.png'
 
 
 export const SkillsInfo = [
@@ -176,7 +176,7 @@ export const projects = [
   },
 
   {
-    id: 12,
+    id: 4,
     title: "REMOVER AI",
     description: "Remove image backgrounds instantly with our powerful AI background remover.Upload any photo and get a clean, transparent background in seconds — no design skills needed!",
     image: Bgremove,
@@ -186,7 +186,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 5,
     title: "ValuneX",
     description: "Currency Converter – A web-based tool designed to convert values between multiple international currencies instantly. Developed using HTML, CSS, and JavaScript with a clean and user-friendly interface that ensures accuracy and responsiveness across all devices.",
     image: value,
@@ -196,7 +196,7 @@ export const projects = [
   },
 
   {
-    id: 11,
+    id: 6,
     title: "TIC TAC TOE GAME",
     description: "Tic Tac Toe Challenge – A simple yet engaging browser-based game where two players compete for victory. Designed with clean UI and smart game logic that instantly declares the winner or draw — perfect for testing your strategy skills!",
     image: tic,
@@ -206,7 +206,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 7,
     title: "Battery Report",
     description: "A modern, full-stack MERN application that provides real-time telemetry and historical data for your Windows laptop's battery health. Built with a beautiful, dark-themed UI using Tailwind CSS and Glassmorphism design principles..",
     image: battery,
@@ -216,17 +216,17 @@ export const projects = [
   },
 
   {
-    id: 99,
+    id: 8,
     title: "Job Flow",
     description: "A full-stack job portal that connects recruiters and job seekers through a secure, user-friendly platform with real-time job postings and applications.Built with modern web technologies, it features authentication, role-based dashboards, resume management, and seamless end-to-end hiring workflows.",
     image: job,
     tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
-    github: "https://github.com/amitkumarpatra99/Job_Flow",
+    github: "https://github.com/amitkumarpatra99/JobPortal",
   },
 
 
   {
-    id: 20,
+    id: 9,
     title: "ConnectX",
     description: "ConnectX — A modern social media platform built with Next.js, MongoDB, and NextAuth. Create posts, follow friends, chat, explore a dynamic feed, and experience a fast, clean, secure social network.",
     image: connect,
@@ -246,7 +246,7 @@ export const projects = [
 
 
   {
-    id: 4,
+    id: 11,
     title: "WEB STORE",
     description: "E-Commerce Website is a fully functional online store platform, designed for seamless browsing, product management, and secure checkout. Featuring a user-friendly interface, shopping cart integration, and payment gateway, it offers a smooth shopping experience for customers and easy management for administrators",
     image: webstore,
@@ -255,7 +255,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 12,
     title: "LINKTREE CLONE",
     description: "A personalized version of the popular Linktree platform, this project allows users to create and manage a custom landing page with multiple links. It features a clean, responsive design, intuitive link management, and real-time analytics for tracking engagement.",
     image: linkTree,
@@ -264,7 +264,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 13,
     title: "MR PATRA WEB ",
     description: "Animated Portfolio Website – A visually appealing and fully responsive personal portfolio designed with HTML, CSS, JavaScript and  React. It includes engaging animations, smooth scrolling, and interactive UI elements that highlight my skills, projects, and contact details in an elegant way.",
     image: mrpatra,
@@ -275,7 +275,7 @@ export const projects = [
 
 
   {
-    id: 7,
+    id: 14,
     title: "PORTFOLIO 99",
     description: "Personal Portfolio Website – A fully responsive and modern portfolio designed to highlight my skills, projects, and experience as a web developer. Built with HTML, CSS, and JavaScript, it reflects my passion for creating elegant, user-friendly, and functional web interfaces.",
     image: portfolio01,
@@ -287,7 +287,7 @@ export const projects = [
 
 
   {
-    id: 8,
+    id: 15,
     title: "FACE DETECTION",
     description: "A Face Detection project- using AI/ML that identifies and recognizes human faces in images or video streams. Built with machine learning algorithms to enable real-time detection with high accuracy. Demonstrates practical application of computer vision techniques.",
     image: face,
@@ -298,7 +298,7 @@ export const projects = [
 
 
   {
-    id: 10,
+    id: 16,
     title: "STONE PAPER SCISSORS",
     description: "Rock Paper Scissors  – A browser-based game developed using HTML, CSS, and JavaScript. It allows users to play against the computer with real-time score updates and responsive animations for a smooth gaming experience.",
     image: rock,
@@ -308,7 +308,7 @@ export const projects = [
 
 
   {
-    id: 13,
+    id: 17,
     title: "PIC FINDER",
     description: "Pic Finder-  A responsive and user-friendly web app built with HTML, CSS, and JavaScript. It enables users to search and browse high-quality images fetched from an external API, displaying results dynamically with smooth UI transitions.",
     image: picfinder,
@@ -316,7 +316,7 @@ export const projects = [
     github: "https://github.com/amitkumarpatra99/Picture_Finder",
   },
   {
-    id: 14,
+    id: 18,
     title: "TWITTER CLONE",
     description: "A full-featured social media platform developed using HTML, CSS, JavaScript and Tailwind CSS. It replicates key functionalities of Twitter including posting tweets, liking, and viewing feeds, all wrapped in a sleek and responsive design.",
     image: twitter,
@@ -324,7 +324,7 @@ export const projects = [
     github: "https://github.com/amitkumarpatra99/Twitter-Clone",
   },
   {
-    id: 15,
+    id: 19,
     title: "AMZON CLONE",
     description: "Amazon Clone Web Application – A front-end e-commerce project replicating the core features of Amazon. Developed using HTML, CSS, it includes product listings, categories, a shopping cart interface, and responsive layouts for all devices.",
     image: amazon,
@@ -333,7 +333,7 @@ export const projects = [
   },
 
   {
-    id: 16,
+    id: 20,
     title: "FLIPKART CLONE",
     description: "Flipkart Clone Web Application – A front-end e-commerce project replicating Flipkart’s core design and functionality. Developed using HTML, CSS, it features product grids, navigation bars, a shopping cart interface, and a responsive design that adapts to all devices.",
     image: flipkart,
@@ -342,7 +342,7 @@ export const projects = [
   },
 
   {
-    id: 17,
+    id: 21,
     title: "NETFLIX CLONE",
     description: "Netflix Clone – Stream Your Imagination! A stylish and interactive streaming platform inspired by Netflix’s design.Built to display movies and web series in a sleek, dark- themed interface with engaging visuals and smooth animations, showcasing my front - end development and UI design skills.",
     image: netflix,
