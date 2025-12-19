@@ -68,7 +68,7 @@ import face from './assets/Project Photo/Face Detection.png'
 import mind from './assets/Project Photo/mindforge.png'
 import connect from './assets/Project Photo/ConnectX.png'
 import battery from './assets/Project Photo/Battery.png'
-import job from './assets/Project Photo/job.png'
+import job from './assets/Project Photo/Job.png'
 
 
 export const SkillsInfo = [
