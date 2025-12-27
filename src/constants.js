@@ -69,6 +69,7 @@ import mind from './assets/Project Photo/mindforge.png'
 import connect from './assets/Project Photo/ConnectX.png'
 import battery from './assets/Project Photo/Battery.png'
 import job from './assets/Project Photo/Job.png'
+import random from './assets/Project Photo/randompg.png'
 
 
 export const SkillsInfo = [
@@ -213,6 +214,16 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
     github: "https://github.com/amitkumarpatra99/Battery_Report",
     live: "https://batteryhelth.vercel.app/",
+  },
+
+  {
+    id: 22,
+    title: "Random Password Generator",
+    description: "A secure and customizable password generator that creates strong, unique passwords with various options for length, character sets, and complexity.",
+    image: random,
+    tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
+     github: "https://github.com/amitkumarpatra99/Random_Password_Generator",
+     live: "https://randompasswordgenerator05.netlify.app/",
   },
 
   {
