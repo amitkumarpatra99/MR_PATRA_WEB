@@ -215,6 +215,15 @@ export const projects = [
     github: "https://github.com/amitkumarpatra99/Battery_Report",
     live: "https://batteryhelth.vercel.app/",
   },
+  {
+    id: 10,
+    title: "MindForge",
+    description: "Mind Forge is a sleek, intuitive, and productivity-focused task manager designed to help you organize your day with clarity and control. Built for creators, students, and professionals, Mind Forge transforms your scattered thoughts into structured, actionable tasks—so you can focus on what truly matters.",
+    image: mind,
+    tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
+    github: "https://github.com/amitkumarpatra99/MindForge",
+    live: "https://mindforgebypatra.vercel.app/"
+  },
 
   {
     id: 22,
@@ -222,8 +231,8 @@ export const projects = [
     description: "A secure and customizable password generator that creates strong, unique passwords with various options for length, character sets, and complexity.",
     image: random,
     tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
-     github: "https://github.com/amitkumarpatra99/Random_Password_Generator",
-     live: "https://randompasswordgenerator05.netlify.app/",
+    github: "https://github.com/amitkumarpatra99/Random_Password_Generator",
+    live: "https://randompasswordgenerator05.netlify.app/",
   },
 
   {
@@ -245,14 +254,7 @@ export const projects = [
     github: "https://github.com/amitkumarpatra99/ConnectX",
   },
 
-  {
-    id: 10,
-    title: "MindForge",
-    description: "Mind Forge is a sleek, intuitive, and productivity-focused task manager designed to help you organize your day with clarity and control. Built for creators, students, and professionals, Mind Forge transforms your scattered thoughts into structured, actionable tasks—so you can focus on what truly matters.",
-    image: mind,
-    tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
-    github: "https://github.com/amitkumarpatra99/MindForge",
-  },
+
 
 
 
