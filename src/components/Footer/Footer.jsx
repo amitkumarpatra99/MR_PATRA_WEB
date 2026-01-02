@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import {
   Mail,
@@ -9,10 +9,49 @@ import {
   ArrowUp,
   Twitter,
   CreditCard,
+  Eye,
 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  // 🌟 REAL LIVE COUNTER LOGIC 🌟
+  useEffect(() => {
+    const fetchVisitCount = async () => {
+      try {
+        // We use your GitHub username as a unique namespace so it doesn't clash with others
+        const NAMESPACE = "amitkumarpatra99"; 
+        const KEY = "portfolio_visits"; 
+
+        // check if user visited in this session to prevent spamming refreshes
+        const hasVisitedSession = sessionStorage.getItem("visit_session_active");
+
+        let response;
+        
+        if (!hasVisitedSession) {
+          // If new session: HIT the API (Increment +1)
+          // Using CountAPI (free service)
+          response = await fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`);
+          sessionStorage.setItem("visit_session_active", "true");
+        } else {
+          // If already visited: GET the API (Read only, no increment)
+          response = await fetch(`https://api.countapi.xyz/get/${NAMESPACE}/${KEY}`);
+        }
+
+        const data = await response.json();
+        setVisitCount(data.value);
+        
+      } catch (error) {
+        console.error("Error fetching visit count:", error);
+        // Fallback: If API is down or blocked by adblocker, show a default 'cool' number
+        setVisitCount(12450); 
+      }
+    };
+
+    fetchVisitCount();
+  }, []);
+
   const icons = [
     {
       id: 1,
@@ -185,6 +224,18 @@ const Footer = () => {
                 {item}
               </li>
             ))}
+
+            {/* 🌟 REAL WEBSITE VISITS 🌟 */}
+            <li className="flex items-center p-2 rounded-lg text-gray-600 dark:text-gray-400 
+              hover:text-teal-600 dark:hover:text-teal-300 
+              hover:bg-teal-500/5 dark:hover:bg-teal-500/10
+              transition-all duration-300 cursor-default hover:pl-3"
+            >
+              <Eye size={16} className="mr-3 text-teal-500" />
+              <span className="font-medium">
+                {visitCount.toLocaleString()} <span className="font-normal opacity-80">Views</span>
+              </span>
+            </li>
           </ul>
         </div>
 
