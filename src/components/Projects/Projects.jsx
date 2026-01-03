@@ -105,7 +105,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-slate-500 mb-6 line-clamp-2">
-                  Click for details regarding tech stack and features.
+                  Click for details.
                 </p>
 
                 <div className="flex items-center gap-3">

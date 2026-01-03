@@ -175,7 +175,7 @@ const About = () => {
             {/* Action Area – UPDATED SOCIAL ICONS INSERTED 😊 */}
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center lg:items-start gap-6 pt-4 justify-center lg:justify-start">
               <a
-                href="https://drive.google.com/file/d/1xgU-OvduPOkcmW6dzjLCwNYCRdNBGHdU/view?usp=sharing"
+                href="https://drive.google.com/file/d/1isT561I17ECXGPFFXhOiTJ11duS4IsIk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-3.5 font-medium rounded-full overflow-hidden text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-500/10 border border-teal-200 dark:border-teal-500/20 hover:bg-teal-100 dark:hover:bg-teal-500/20 hover:text-teal-700 dark:hover:text-white transition-all duration-300 w-full sm:w-auto"

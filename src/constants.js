@@ -218,7 +218,7 @@ export const projects = [
 
   {
     id: 22,
-    title: "Random Password Generator",
+    title: "Random Pass Generator",
     description: "A secure and customizable password generator that creates strong, unique passwords with various options for length, character sets, and complexity.",
     image: random,
     tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
