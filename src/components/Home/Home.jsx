@@ -89,39 +89,139 @@ const Home = () => {
           </motion.p>
 
           {/* Action Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-            className="flex flex-wrap items-center gap-3 md:gap-4"
-          >
-            <a
-              href="https://drive.google.com/file/d/1_BrhJs06yD1BwwCeLDzYvQLggvlN3lEE/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-button flex items-center gap-2 px-6 py-2.5 md:py-3 text-xs md:text-sm font-semibold rounded-full text-black hover:scale-[1.02]"
-            >
-              <span>View My CV</span>
-              <ExternalLink size={12} />
-            </a>
-            <button
-              onClick={() => {
-                const target = document.getElementById("projects");
-                if (target) {
-                  if (window.lenis) {
-                    window.lenis.scrollTo(target, { offset: -85, duration: 1.2 });
-                  } else {
-                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - 85;
-                    window.scrollTo({ top: targetPosition, behavior: "smooth" });
-                  }
-                }
-              }}
-              className="group flex items-center gap-2 px-6 py-2.5 md:py-3 text-xs md:text-sm font-semibold rounded-full bg-[#111] border border-white/10 text-white hover:bg-[#1a1a1a] transition-all duration-300 cursor-pointer"
-            >
-              <span>View My Work</span>
-              <FaArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
-          </motion.div>
+         <motion.div
+  initial={{ opacity: 0, y: 18 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{
+    duration: 0.7,
+    delay: 0.3,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="flex flex-wrap items-center gap-3 md:gap-4"
+>
+  {/* VIEW CV */}
+  <motion.a
+    href="https://drive.google.com/file/d/1_BrhJs06yD1BwwCeLDzYvQLggvlN3lEE/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.04, y: -2 }}
+    whileTap={{ scale: 0.97 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+    className="group relative overflow-hidden flex items-center gap-2.5 px-6 py-3 md:px-7 md:py-3.5 text-xs md:text-sm font-semibold rounded-full text-white border border-white/15 bg-white/[0.06] backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:border-white/25 hover:bg-white/[0.1] hover:shadow-[0_12px_40px_rgba(79,183,179,0.15)] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#4FB7B3]/50"
+  >
+    {/* Shine */}
+    <span
+      className="
+        absolute inset-0 -translate-x-[120%]
+        bg-gradient-to-r from-transparent via-white/15 to-transparent
+        skew-x-12
+        group-hover:translate-x-[120%]
+        transition-transform duration-700
+      "
+    />
+
+    {/* Glow */}
+    <span
+      className="
+        absolute -inset-1 rounded-full
+        bg-[#4FB7B3]/10
+        blur-xl opacity-0
+        group-hover:opacity-100
+        transition-opacity duration-500
+      "
+    />
+
+    <span className="relative z-10">View My CV</span>
+
+    <motion.span
+      className="relative z-10"
+      initial={{ x: 0, y: 0 }}
+      whileHover={{ x: 2, y: -2 }}
+      transition={{ type: "spring", stiffness: 400, damping: 15 }}
+    >
+      <ExternalLink size={14} strokeWidth={2} />
+    </motion.span>
+  </motion.a>
+
+  {/* VIEW MY WORK */}
+  <motion.button
+    onClick={() => {
+      const target = document.getElementById("projects");
+
+      if (target) {
+        if (window.lenis) {
+          window.lenis.scrollTo(target, {
+            offset: -85,
+            duration: 1.2,
+          });
+        } else {
+          const targetPosition =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            85;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
+    }}
+    whileHover={{ scale: 1.04, y: -2 }}
+    whileTap={{ scale: 0.97 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+    className="
+      group relative overflow-hidden
+      flex items-center gap-2.5
+      px-6 py-3 md:px-7 md:py-3.5
+      text-xs md:text-sm font-semibold
+      rounded-full
+      bg-[#111]
+      border border-white/10
+      text-white
+      shadow-[0_8px_25px_rgba(0,0,0,0.2)]
+      hover:bg-[#171717]
+      hover:border-white/20
+      hover:shadow-[0_12px_35px_rgba(0,0,0,0.35)]
+      transition-all duration-300
+      cursor-pointer
+      focus:outline-none
+      focus:ring-2
+      focus:ring-white/20
+    "
+  >
+    {/* Hover background */}
+    <span
+      className="
+        absolute inset-0
+        bg-gradient-to-r
+        from-white/[0.03]
+        via-white/[0.08]
+        to-white/[0.03]
+        opacity-0
+        group-hover:opacity-100
+        transition-opacity duration-300
+      "
+    />
+
+    <span className="relative z-10">
+      View My Work
+    </span>
+
+    <motion.span
+      className="relative z-10"
+      initial={{ x: 0 }}
+      whileHover={{ x: 5 }}
+      transition={{
+        type: "spring",
+        stiffness: 400,
+        damping: 15,
+      }}
+    >
+      <FaArrowRight size={13} />
+    </motion.span>
+  </motion.button>
+</motion.div>
         </div>
 
         {/* RIGHT COLUMN: Minimalist Text Architecture */}
