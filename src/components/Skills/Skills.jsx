@@ -130,7 +130,7 @@ const Skills = () => {
                 <span className="text-neutral-400">Builder.</span>
               </h3>
               <p className="text-neutral-400 text-xs lg:text-sm font-medium leading-snug">
-                Maintained 30+ public repositories.
+                Maintained 35+ public repositories.
               </p>
             </div>
 
