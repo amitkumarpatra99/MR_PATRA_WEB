@@ -101,7 +101,7 @@ const Home = () => {
 >
   {/* VIEW CV */}
   <motion.a
-    href="https://drive.google.com/file/d/1_BrhJs06yD1BwwCeLDzYvQLggvlN3lEE/view?usp=sharing"
+    href="https://drive.google.com/file/d/1K1f-ZEa63A5FJVjhI1PpCSRt35mFuhwx/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.04, y: -2 }}
