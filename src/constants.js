@@ -125,6 +125,7 @@ import panalysis from './assets/Project Photo/portfolioanalysis.png'
 import bdms from './assets/Project Photo/bdms.png'
 import loop from './assets/Project Photo/LOOP AI.png'
 import drug from './assets/Project Photo/pharma.png'
+import barber from './assets/Project Photo/Barber.png'
 
 
 
@@ -320,6 +321,17 @@ export const projects = [
     ],
     engineering: "Leverages React and Next.js server actions for backend requests. Chart.js powers the visual breakdown of transactions, and standard security practices are followed for mock banking services.",
     impact: "Simplifies accounting and finance tasks, enabling users to manage resources and see exactly where their money is spent."
+  },
+
+  {
+    id:20,
+    title:"BARBER SHOP",
+    description:"A barber shop is a retail establishment that primarily offers men’s haircuts, shaves, and beard trims. It combines traditional barbering techniques with modern grooming trends to provide a premium experience for male clients. The shop typically features classic barber chairs, specialized tools like straight razors and clippers, and a masculine-themed decor that creates a comfortable yet sophisticated atmosphere.",
+    image: barber,
+    tags: ["HTML", "CSS", "JavaScript", "Mongo DB", "Express Js", "React JS ", "Next JS", "Node JS", "Tailwind CSS", "API", "Framer Motion", "React-Icons", "Redux", "Material UI", "GSAP"],
+    github: "https://github.com/amitkumarpatra99/BARBER-SHOP",
+    
+    
   },
   {
     id: 6,
