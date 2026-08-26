@@ -97,6 +97,8 @@ const Home = () => {
     delay: 0.3,
     ease: [0.22, 1, 0.36, 1],
   }}
+
+  
   className="flex flex-wrap items-center gap-3 md:gap-4"
 >
   {/* VIEW CV */}
