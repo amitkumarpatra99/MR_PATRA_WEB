@@ -12,9 +12,7 @@ const Home = () => {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#020205] via-[#050b1a] to-[#000000]" />
 
-        {/* Optimized Static Radial Glows with Compositor-only Animations */}
         <div className="absolute inset-0 overflow-hidden opacity-80 pointer-events-none z-0">
-          {/* Blob 1 - Blue */}
           <div 
             className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.15)_0%,transparent_70%)] blur-[80px]"
             style={{
@@ -22,7 +20,6 @@ const Home = () => {
               willChange: "transform"
             }}
           />
-          {/* Blob 2 - Indigo */}
           <div 
             className="absolute bottom-[-10%] right-[-10%] w-[70vw] h-[70vw] max-w-[700px] max-h-[700px] rounded-full bg-[radial-gradient(circle,rgba(79,70,229,0.15)_0%,transparent_70%)] blur-[80px]"
             style={{
@@ -30,7 +27,6 @@ const Home = () => {
               willChange: "transform"
             }}
           />
-          {/* Blob 3 - Emerald */}
           <div 
             className="absolute top-[40%] left-[30%] w-[50vw] h-[50vw] max-w-[500px] max-h-[500px] rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.08)_0%,transparent_70%)] blur-[90px]"
             style={{
@@ -88,7 +84,6 @@ const Home = () => {
             If I cannot do great things, I can do small things in a great way.
           </motion.p>
 
-          {/* Action Buttons */}
          <motion.div
   initial={{ opacity: 0, y: 18 }}
   animate={{ opacity: 1, y: 0 }}
@@ -98,7 +93,7 @@ const Home = () => {
     ease: [0.22, 1, 0.36, 1],
   }}
 
-  
+
   className="flex flex-wrap items-center gap-3 md:gap-4"
 >
   {/* VIEW CV */}
